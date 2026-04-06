@@ -3,6 +3,7 @@ import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { ExternalLink, Github, Star, ArrowUpRight } from 'lucide-react'
 import { projects } from '../data'
 
+
 function ProjectCard({ project, index, inView }) {
   const [hovered, setHovered] = useState(false)
   const colorMap = {
@@ -34,10 +35,20 @@ function ProjectCard({ project, index, inView }) {
           />
         )}
       </AnimatePresence>
-
-      <div className="relative p-6 flex flex-col h-full">
+      
+      {/* Project image */}
+      {project.image && (
+        <div className="w-full h-60 overflow-hidden">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+      )}
+      <div className="relative p-6 flex flex-col h-30">
         {/* Header */}
-        <div className="flex items-start justify-between mb-4">
+        <div className="flex items-start justify-between">
           <div className="flex items-center gap-2">
             {project.featured && (
               <span className={`flex items-center gap-1 px-2 py-0.5 rounded-full text-xs border font-mono ${c.badge}`}>
