@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Mail, Github, Linkedin, Twitter, Send, MapPin, ArrowUpRight } from 'lucide-react'
 import { personal } from '../data'
+import emailjs from '@emailjs/browser'
 
 const socials = [
   { icon: Github, label: 'GitHub', href: personal.github, handle: '@alexrivera' },
@@ -16,12 +17,21 @@ export default function Contact() {
   const [sent, setSent] = useState(false)
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    // No backend — just simulate
-    setSent(true)
-    setTimeout(() => setSent(false), 4000)
-    setForm({ name: '', email: '', message: '' })
-  }
+  e.preventDefault()
+
+  emailjs.send(
+    'service_gnvy4wh',    // from EmailJS dashboard
+    'template_jc6ky8h',   // from EmailJS dashboard
+    {
+      from_name: form.name,
+      from_email: form.email,
+      message: form.message,
+    },
+    '3bOFCYjy0uUPLunWw'     // from EmailJS dashboard
+  )
+  .then(() => setSent(true))
+  .catch(() => alert('Something went wrong, try again.'))
+}
 
   return (
     <section id="contact" ref={ref} className="relative py-32 overflow-hidden">
@@ -78,6 +88,24 @@ export default function Contact() {
                 <div className="font-body text-white/80 text-sm">India · Open to Remote</div>
               </div>
             </div>
+           {/* WhatsApp */}
+            <a
+            href="https://wa.me/919840228021?text=Hi%20Alex%2C%20I%20saw%20your%20portfolio!"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass rounded-2xl p-6 flex items-center gap-4 hover:border-acid/30 transition-all duration-300 hover:-translate-y-1 group block"
+            data-hover
+          >
+            <div className="w-12 h-12 rounded-xl bg-acid/10 border border-acid/20 flex items-center justify-center text-2xl flex-shrink-0">
+              📱
+            </div>
+            <div className="flex-1">
+              <div className="font-mono text-xs text-white/30 mb-1">WHATSAPP</div>
+              <div className="font-body text-white/80 text-sm">+91 9840228021</div>
+            </div>
+            <ArrowUpRight size={16} className="text-white/20 group-hover:text-acid transition-colors" />
+          </a>
+              
 
             {/* Social links */}
             <div className="space-y-3">
@@ -181,6 +209,8 @@ export default function Contact() {
 function InputField({ label, type, placeholder, value, onChange, required }) {
   return (
     <div>
+
+      
       <label className="block font-mono text-xs text-white/40 mb-2 tracking-wider">
         {label.toUpperCase()}
       </label>
