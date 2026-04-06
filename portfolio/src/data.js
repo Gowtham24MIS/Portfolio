@@ -1,0 +1,157 @@
+export const personal = {
+  name: 'PM Gowtham',
+  role: 'Web Developer & Machine Learning Enthusiast',
+  tagline: 'Building scalable, intelligent applications at the intersection of elegant code and mathematical intuition.',
+  bio: "I'm a second-year Integrated M.Tech student passionate about crafting web experiences and intelligent systems. I approach both web development and machine learning from first principles — understanding the mathematics and building from scratch before reaching for libraries.",
+  bio2: "From interactive frontends to neural network implementations, I believe in understanding the 'why' behind every tool I use.",
+  email: 'gowtham.developer07@example.com',
+  github: 'https://github.com/Gowtham24MIS',
+  linkedin: 'https://www.linkedin.com/in/p-m-gowtham-022756355/',
+  twitter: 'https://twitter.com',
+  resume: '/resume1.pdf',
+  // Replace with your actual image path: src/assets/profile.jpg
+  profileImage: 'src/assets/pmg.png',
+}
+
+export const skills = [
+  {
+    category: 'Frontend',
+    icon: '⬡',
+    color: 'acid',
+    items: [
+      { name: 'HTML5', level: 95 },
+      { name: 'TailwindCSS', level: 90 },
+      { name: 'JavaScript', level: 88 },
+      { name: 'React.js', level: 85 },
+    ],
+  },
+  {
+    category: 'Backend & ML',
+    icon: '◈',
+    color: 'glow',
+    items: [
+      { name: 'Python', level: 90 },
+      { name: 'Flask', level: 80 },
+      { name: 'Machine Learning', level: 75 },
+      { name: 'NumPy / Pandas', level: 82 },
+    ],
+  },
+  {
+    category: 'Tools & Concepts',
+    icon: '◎',
+    color: 'plasma',
+    items: [
+      { name: 'Git & GitHub', level: 85 },
+      { name: 'REST APIs', level: 80 },
+      { name: 'Linear Algebra', level: 78 },
+      { name: 'Data Structures', level: 82 },
+    ],
+  },
+]
+
+export const techBadges = [
+  { name: 'HTML5', icon: '🌐' },
+  { name: 'TailwindCSS', icon: '🎨' },
+  { name: 'JavaScript', icon: '⚡' },
+  { name: 'React.js', icon: '⚛️' },
+  { name: 'Python', icon: '🐍' },
+  { name: 'Flask', icon: '🔥' },
+  { name: 'Machine Learning', icon: '🧠' },
+  { name: 'NumPy', icon: '📊' },
+  { name: 'Git', icon: '🔀' },
+  { name: 'REST APIs', icon: '🔗' },
+]
+
+export const projects = [
+  {
+    id: 1,
+    title: 'Neural Net from Scratch',
+    description: 'A fully custom feedforward neural network built with pure NumPy — no ML frameworks. Implements backpropagation, gradient descent, and various activation functions with mathematical precision.',
+    tags: ['Python', 'NumPy', 'Math', 'ML'],
+    color: 'glow',
+    accentColor: '#6ee7f7',
+    demo: '#',
+    github: '#',
+    featured: true,
+    stats: [{ label: 'Accuracy', value: '96.4%' }, { label: 'Layers', value: '5' }],
+  },
+  {
+    id: 2,
+    title: 'AI Dashboard',
+    description: 'A real-time analytics dashboard with ML-powered insights. Features interactive charts, anomaly detection, and predictive trend analysis built with React and Flask backend.',
+    tags: ['React', 'Flask', 'Python', 'TailwindCSS'],
+    color: 'acid',
+    accentColor: '#a8ff3e',
+    demo: '#',
+    github: '#',
+    featured: true,
+    stats: [{ label: 'Components', value: '28' }, { label: 'APIs', value: '12' }],
+  },
+  {
+    id: 3,
+    title: 'Sentiment Analyzer',
+    description: 'NLP model for real-time sentiment analysis on text streams. Implements TF-IDF vectorization and a custom Naive Bayes classifier, exposed via a REST API with a clean React frontend.',
+    tags: ['Python', 'React', 'NLP', 'Flask'],
+    color: 'plasma',
+    accentColor: '#ff6b6b',
+    demo: '#',
+    github: '#',
+    featured: false,
+    stats: [{ label: 'Accuracy', value: '89%' }, { label: 'Classes', value: '3' }],
+  },
+  {
+    id: 4,
+    title: 'Portfolio OS',
+    description: 'A creative portfolio designed like a minimal operating system — with draggable windows, a custom taskbar, and file-explorer style project navigation. Pure React + CSS.',
+    tags: ['React', 'JavaScript', 'TailwindCSS'],
+    color: 'acid',
+    accentColor: '#a8ff3e',
+    demo: '#',
+    github: '#',
+    featured: false,
+    stats: [{ label: 'Views', value: '2.1k' }, { label: 'Stars', value: '47' }],
+  },
+]
+
+export const timeline = [
+  {
+    year: '2023',
+    title: 'The Beginning',
+    description: 'Started my Integrated M.Tech journey. Built my first HTML/CSS pages and fell in love with turning designs into reality.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    icon: '🌱',
+    side: 'left',
+  },
+  {
+    year: '2023',
+    title: 'React & Modern Web',
+    description: 'Dove deep into component-based architecture with React. Discovered TailwindCSS and never looked back. Built full responsive web apps.',
+    tags: ['React', 'TailwindCSS', 'Vite'],
+    icon: '⚛️',
+    side: 'right',
+  },
+  {
+    year: '2024',
+    title: 'Python & Backend',
+    description: 'Expanded into server-side development with Python and Flask. Learned to build REST APIs and connect frontends to intelligent backends.',
+    tags: ['Python', 'Flask', 'REST APIs'],
+    icon: '🔧',
+    side: 'left',
+  },
+  {
+    year: '2024',
+    title: 'Machine Learning',
+    description: 'Started learning ML from mathematical fundamentals — linear algebra, calculus, statistics. Built neural networks and classifiers from scratch without frameworks.',
+    tags: ['NumPy', 'Linear Algebra', 'ML Math'],
+    icon: '🧠',
+    side: 'right',
+  },
+  {
+    year: '2025',
+    title: 'Full-Stack AI Apps',
+    description: 'Combining web development expertise with ML knowledge to build intelligent, production-ready applications that solve real problems.',
+    tags: ['Full-Stack', 'AI Integration', 'Production'],
+    icon: '🚀',
+    side: 'left',
+  },
+]
