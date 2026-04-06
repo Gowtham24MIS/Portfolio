@@ -82,7 +82,7 @@ export const projects = [
     tags: ['React', 'TailwindCSS'],
     color: 'acid',
     accentColor: '#a8ff3e',
-    image: '/projects/gym.png',
+    image: '/projects/aarthi.png',
     demo: 'https://ambattur-aarthi.vercel.app/',
     github: 'https://github.com/Gowtham24MIS/aarthi',
     featured: false,
