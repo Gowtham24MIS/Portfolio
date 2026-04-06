@@ -90,7 +90,7 @@ export default function Contact() {
             </div>
            {/* WhatsApp */}
             <a
-            href="https://wa.me/919840228021?text=Hi%20Alex%2C%20I%20saw%20your%20portfolio!"
+            href="https://wa.me/919840228021?text=Hi%20Gowtham%2C%20I%20saw%20your%20portfolio!%20and%20want%20to%20connect"
             target="_blank"
             rel="noopener noreferrer"
             className="glass rounded-2xl p-6 flex items-center gap-4 hover:border-acid/30 transition-all duration-300 hover:-translate-y-1 group block"
