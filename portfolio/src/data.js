@@ -10,7 +10,6 @@ export const personal = {
   twitter: 'https://twitter.com',
   resume: '/resume1.pdf',
   // Replace with your actual image path: src/assets/profile.jpg
-  profileImage: 'src/assets/pmg.png',
 }
 
 export const skills = [

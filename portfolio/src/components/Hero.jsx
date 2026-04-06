@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowDown, Github, Linkedin, Twitter, ExternalLink } from 'lucide-react'
 import { personal } from '../data'
+import profileImg from '../assets/pmg.png'
 
 const stagger = {
   hidden: {},
@@ -138,9 +139,9 @@ export default function Hero() {
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
                 className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden"
               >
-                {personal.profileImage ? (
+                {profileImg ? (
                   <img
-                    src={personal.profileImage}
+                    src={profileImg}
                     alt={personal.name}
                     className="w-full h-full object-cover"
                   />
