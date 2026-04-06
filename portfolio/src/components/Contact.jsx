@@ -5,9 +5,9 @@ import { personal } from '../data'
 import emailjs from '@emailjs/browser'
 
 const socials = [
-  { icon: Github, label: 'GitHub', href: personal.github, handle: '@alexrivera' },
-  { icon: Linkedin, label: 'LinkedIn', href: personal.linkedin, handle: 'in/alexrivera' },
-  { icon: Twitter, label: 'Twitter', href: personal.twitter, handle: '@alexrivera' },
+  { icon: Github, label: 'GitHub', href: personal.github, handle: 'Gowtham24MIS' },
+  { icon: Linkedin, label: 'LinkedIn', href: personal.linkedin, handle: 'in/p-m-gowtham-022756355/' },
+  { icon: Twitter, label: 'Twitter', href: personal.twitter, handle: '@pm_gowtham' },
 ]
 
 export default function Contact() {
