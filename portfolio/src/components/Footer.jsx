@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Logo */}
         <a href="#home" className="font-display font-bold text-lg tracking-tight">
           <span className="text-acid">&lt;</span>
-          <span className="text-white">AR</span>
+          <span className="text-white">PMG</span>
           <span className="text-acid">/&gt;</span>
         </a>
 
